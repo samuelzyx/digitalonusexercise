@@ -1,0 +1,44 @@
+h1{
+    background: black;
+    color: white;
+    text-align: right;
+    padding: .75em;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.container{
+    display: inline-flex;
+    width: 100%;
+}
+.content,
+.sideBar{
+    width: auto;
+    display: inline-block;
+    padding: 1em;
+}
+.sideBar{
+    width: 30%;
+}
+.content{
+    background: #000000eb;
+    color: white;
+    width: 100%;
+}
+.userLink{
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: .5em;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.userLink:hover,
+.userLink:active{
+    border: 1px solid #007bff;
+}

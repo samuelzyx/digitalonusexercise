@@ -8,11 +8,11 @@
     <div class="sideBar">
         <ul *ngIf="users" >
           <li *ngFor="let user of users">
-            <h2><a target="_blank" href="user.email" class="userLink">{{user.name}}</a></h2>
+            <h2><a class="userLink"  [routerLink]="['/info']" (click)="onClic(user)">{{user.name}}</a></h2>
           </li>
         </ul>
     </div>
     <div class="content">
-        <!-- <router-outlet></router-outlet> -->
+        <router-outlet></router-outlet>
     </div>
 </div>

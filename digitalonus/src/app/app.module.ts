@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
 
-// import { routing, appRoutingProviders } from './app.routing';
+import { routing, appRoutingProviders } from './app.routing';
 
 @NgModule({
     declarations: [
@@ -14,10 +14,11 @@ import { InfoComponent } from './info/info.component';
     ],
     imports: [
         BrowserModule,
-        HttpModule
+        HttpModule,
+        routing
     ],
     providers: [
-        // appRoutingProviders
+        appRoutingProviders
     ],
     bootstrap: [AppComponent]
 })
